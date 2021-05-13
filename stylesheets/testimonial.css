@@ -1,0 +1,144 @@
+#testimonialPage {
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #02070d;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(/images/sunset-gaansbaai.jpeg);
+  background-size: cover;
+  background-position: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialPage-main-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  text-transform: uppercase;
+  color: #848484;
+  align-self: center;
+  font-size: 75px;
+  margin-top: 20%;
+  margin-bottom: 3%;
+  text-shadow: 2px 2px 2px white;
+}
+
+.testimonialPage-main-heading span {
+  color: white;
+  margin-left: 30px;
+  text-shadow: 3px 2px 2px #848484;
+}
+
+.owl-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 10px;
+  height: 100vh;
+  background: transparent;
+  max-width: 100vw;
+}
+
+.owl-stage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/images/orange2.jpeg);
+  background-size: contain;
+  background-position: center;
+  padding: 80px;
+  padding-bottom: 18px;
+  background-position: top;
+  margin-left: -25.5px;
+  margin-right: -10px;
+}
+
+#testimonialPage h2 {
+  color: white;
+  justify-self: center;
+  align-self: flex-end;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+#testimonialPage h2 span {
+  color: #848484;
+}
+
+#testimonialPage h3 {
+  color: rgb(104, 103, 103);
+  justify-self: center;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#testimonialPage q {
+  color: white;
+  background-color: none;
+  font-style: italic;
+}
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+.testimonialPage-testimonials {
+  background: rgba(24, 23, 23, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(152, 152, 156, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border-bottom: 3px solid rgba(170, 162, 162, 0.473);
+  color: slategray;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  margin-left: -20px;
+  width: 500px;
+  height: 300px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.testimonialPage-testimonials img {
+  display: block;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-self: center;
+  height: 300px;
+  padding: 30px;
+  /* margin: 10px; */
+}
+
+.testimonialPage-words {
+  color: white;
+  display: grid;
+  grid-column-start: 2;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .testimonialPage-testimonials {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* .testimonialPage {
+    background-size: cover;
+    background-position: center;
+  } */
+
+  .testimonialPage-testimonials img {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+}
