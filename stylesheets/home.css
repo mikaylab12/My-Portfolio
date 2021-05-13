@@ -291,21 +291,55 @@ body {
 
 .homePage-headings h3 {
   font-size: 75px;
-  padding: 5px 50px;
+  margin-top: 60px;
+  padding-top: 20px;
   white-space: nowrap;
   color: white;
   align-self: center;
+  margin-right: -0px;
+  margin-left: 50x;
 }
 
 .line {
   position: relative;
   transform: translateY(-50%);
-  border-right: 2px solid white;
+  border-right: 5px solid white;
   overflow: hidden;
 }
 
 .anim-heading {
-  position: relative;
+  animation: heading 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+
+  /* animation: heading2 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal; */
+}
+
+@keyframes heading {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13.25em;
+  }
+}
+/* 
+@keyframes heading2 {
+  from {
+    width: 13.25em;
+  }
+  to {
+    width: 0;
+  }
+} */
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .homePage-description {
@@ -319,13 +353,13 @@ body {
 .homePage-description p {
   color: #848484;
   align-items: center;
-  margin: 15px 15px;
+  margin: -40px 15px;
 }
 
 .homePage-description i {
   color: #ffffff;
   align-items: center;
-  margin: 15px 15px;
+  margin: -40px 15px;
 }
 
 .homePage-btn {
@@ -343,9 +377,9 @@ body {
   max-height: 50px;
   font-weight: 500;
   border-radius: 50px;
-  padding: 10px 10px;
-  margin-top: 40px;
-  border-radius: 50px; */
+  padding: 10px 10px;*/
+  margin-top: 50px;
+  /* border-radius: 50px; */
 }
 
 .homePage-btn a {

@@ -93,6 +93,10 @@
   /* If you want dots under the hoverable text */
 }
 
+.skillsPage-iconText {
+  text-shadow: none;
+}
+
 /* Tooltip text */
 .skillsPage-iconGroup .skillsPage-iconText {
   visibility: hidden;
@@ -130,6 +134,7 @@
   align-items: flex-end;
   color: #848484;
   border: 2px dotted #848484;
+  text-shadow: none;
 }
 
 .skillsPage-iconGroup {
@@ -209,6 +214,7 @@
   border: 2px solid #ffffff;
   border-radius: 50px;
   padding: 10px;
+  text-shadow: none;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -230,4 +236,9 @@
   align-items: flex-end;
   color: #848484;
   border: 2px dotted #848484;
+  text-shadow: none;
+}
+
+.skillsPage-iconGroup {
+  text-shadow: none;
 }

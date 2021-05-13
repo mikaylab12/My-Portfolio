@@ -92,8 +92,9 @@
 .experiencePage-container {
   height: 150vh;
   display: grid;
-  grid-template-columns: 1fr, 10%, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+  width: 100%;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   animation: change1 10s infinite;
   /* background-position: center; */
 }
@@ -173,6 +174,7 @@
 
 .experiencePage-items p {
   color: white;
+  margin-top: 7px;
 }
 
 .experiencePage-items h5 {
@@ -182,15 +184,16 @@
 
 .experiencePage-items {
   background: rgba(36, 36, 36, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(162, 162, 185, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(85, 85, 85, 0.37);
+  /* box-shadow: 0 8px 32px 0 rgba(162, 162, 185, 0.37);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); */
   border-bottom: 3px solid #848484;
   position: relative;
   padding: 15px;
   border-radius: 10px;
   justify-self: center;
-  margin: 10px;
+  /* margin: 10px; */
   align-self: center;
   justify-content: center;
 }
