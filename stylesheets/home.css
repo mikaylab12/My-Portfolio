@@ -201,8 +201,7 @@ body {
 .sideNavbar-links.active {
   top: 0;
   right: 0;
-  /* display: flex;
-  flex-direction: column; */
+  z-index: 100;
 }
 
 #sideNavbar footer {
@@ -431,4 +430,181 @@ body {
   background-color: white;
   color: #242424;
   border-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  #top-navbar {
+    max-width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .top-navbar-initials {
+    font-size: 250%;
+    margin-left: -3%;
+    margin-right: -83%;
+  }
+
+  .top-navbar-links-and-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .top-navbar-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    align-self: center;
+    margin-top: -2%;
+    margin-right: 2%;
+  }
+
+  .top-navbar-links a {
+    text-decoration: none;
+    justify-content: flex-start;
+    margin-left: -25%;
+    margin-right: 25%;
+    align-self: flex-start;
+    font-size: 50%;
+    row-gap: -2%;
+    margin-top: 2%;
+  }
+
+  .top-navbar-link-home {
+    margin-right: -3%;
+    align-self: center;
+    font-size: 50%;
+    margin-top: 1%;
+  }
+
+  .navbar-menu {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    align-self: flex-end;
+    position: fixed;
+    z-index: 9999999;
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  /* Home Page / Landing Page */
+  #homePage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* padding: 20%; */
+    /* background-color: transparent; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+      url("/images/timbs-shoot.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .homePage-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    text-transform: uppercase;
+    margin-top: -2%;
+  }
+
+  .homePage-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  .homePage-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .homePage-headings h1 {
+    font-size: 150%;
+    color: white;
+    align-self: center;
+  }
+
+  .homePage-headings h3 {
+    font-size: 103%;
+    margin-top: 60px;
+    padding-top: 20px;
+    white-space: nowrap;
+    color: white;
+    align-self: center;
+    margin-right: -0px;
+    margin-left: 50x;
+  }
+
+  .line {
+    position: relative;
+    transform: translateY(-50%);
+    border-right: 5px solid white;
+    overflow: hidden;
+    font-size: 7%;
+  }
+
+  .anim-heading {
+    animation: heading 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+
+    /* animation: heading2 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal; */
+  }
+
+  @keyframes heading {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: white;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+  .homePage-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-left: -15px;
+  }
+
+  .homePage-description p {
+    color: #848484;
+    align-items: center;
+    margin: 20% 5%;
+    font-size: 70%;
+  }
+
+  .homePage-description i {
+    color: #ffffff;
+    align-items: center;
+    margin: 20% 5%;
+  }
 }

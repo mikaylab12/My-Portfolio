@@ -222,3 +222,215 @@
   border-radius: 50%;
   border: 1px solid white;
 }
+
+@media screen and (max-width: 800px) {
+  #aboutPage {
+    max-width: 100%;
+    height: 100%;
+    margin-top: -50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .aboutPage-content {
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutPage img {
+    order: 2;
+    margin-top: 20%;
+    align-self: center;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+  }
+
+  .aboutPage-btn {
+    max-height: 30px;
+    max-width: 20vw;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    background: transparent;
+    padding: 15px;
+    /* padding-bottom: 15px; */
+    /* border-radius: 5px; */
+    border-color: 3px double #848484;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .aboutPage-btn a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 10px;
+    font-size: 8px;
+  }
+
+  .aboutPage-text {
+    margin-top: 0;
+  }
+
+  .aboutPage-text h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .aboutPage-text h2 span {
+    color: white;
+    text-shadow: 3px 3px 3px #242424;
+    margin-right: 5px;
+    text-shadow: 3px 2px 1px #848484;
+  }
+
+  .aboutPage-pText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .aboutPage-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 10px;
+  }
+
+  .aboutPage-iconInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* font: 10px; */
+  }
+
+  .aboutPage-icons i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 50%;
+  }
+
+  .aboutPage-iconInfo i {
+    margin-left: -15%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutPage-icon-text {
+    color: #a5a5a5;
+    font: 5%;
+    align-self: center;
+  }
+
+  .location {
+    padding: 5% 6%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .phone {
+    padding: 6% 6%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .envelope {
+    padding: 5% 5%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .number {
+    order: 0;
+  }
+
+  .address {
+    order: 1;
+  }
+
+  .email {
+    order: 2;
+  }
+
+  .aboutPage-iconInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutPage-icons i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .aboutPage-icon {
+    margin: 15px 15px;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .aboutPage-icon i {
+    margin: 15px;
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    /* width: 60px;
+    line-height: 20px;
+    max-height: 60px;
+    border: 1px solid white;
+    border-radius: 50%; */
+  }
+
+  .aboutPage-icon-text {
+    color: #a5a5a5;
+    font-size: 15px;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: 590;
+    margin-top: 10px;
+  }
+
+  .aboutPage-pText {
+    order: 1;
+  }
+
+  .location {
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .phone {
+    padding: 15px 17px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .envelope {
+    padding: 15px 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+}

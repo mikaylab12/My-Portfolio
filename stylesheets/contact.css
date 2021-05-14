@@ -1,6 +1,8 @@
 #contactPage {
   max-width: 100vw;
-  height: 90vh;
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url(/images/seapoint.jpeg);
   background-size: cover;
@@ -69,7 +71,7 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
-    url(/images/seapoint.jpeg);
+    url(/images/seapoint2.jpeg);
   background-size: cover;
   background-position: top;
   border-radius: 10px;
@@ -299,4 +301,138 @@
   display: flex;
   justify-self: flex-end;
   align-self: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+  #contactPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contactPage-form {
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactPage-heading {
+    font-size: 200%;
+    margin-bottom: 10%;
+  }
+
+  .contactPage-form-details {
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .contactPage-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactPage-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+  }
+
+  .contactPage-group {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 30%;
+    border: none;
+  }
+
+  .contactPage-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font: 10px;
+  }
+
+  .contactPage-iconInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* font: 10px; */
+  }
+
+  .contactPage-icons i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 50%;
+  }
+
+  .contactPage-iconInfo i {
+    margin-left: -15%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactPage-icon-text {
+    color: #a5a5a5;
+    font: 5%;
+    align-self: center;
+  }
+
+  .location {
+    padding: 5% 6%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .phone {
+    padding: 6% 6%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .envelope {
+    padding: 5% 5%;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 100%;
+  }
+
+  .number {
+    order: 0;
+  }
+
+  .address {
+    order: 1;
+  }
+
+  .email {
+    order: 2;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .copyright {
+    align-self: center;
+  }
 }

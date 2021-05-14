@@ -1,12 +1,13 @@
 #portfolioPage {
   max-width: 100vw;
   height: 300vh;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url(/images/sunset-gaansbaai.jpeg);
   background-size: cover;
   background-position: center; */
   animation: change1 10s infinite;
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +141,9 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s ease-in;
 }
+
 .portfolioPage-links a:hover {
   border-radius: 67px;
   border-radius: 50px;
@@ -183,12 +186,17 @@
   font-size: small;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  #portfolioPage {
+    height: 150%;
+    width: 100%;
+  }
+
   .portfolioPage-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 80px;
+    margin-top: 0;
   }
 
   .portfolioPage-cards {
@@ -210,5 +218,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #portfolioPage img {
+    height: 230px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: auto;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .portfolioPage-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-top: 40px; */
+    font-size: 250%;
+    margin-top: 30%;
+    margin-left: -25%;
+  }
+
+  .portfolioPage-heading span {
+    margin-left: 0;
+    margin-bottom: -10%;
   }
 }
