@@ -70,6 +70,7 @@ body {
   justify-content: flex-start;
   /* margin-right: 50px; */
   align-self: center;
+  margin-left: 3.5%;
   font-size: 50px;
   font-weight: bold;
   text-shadow: 3px 2px 1px #848484;
@@ -94,8 +95,8 @@ body {
   list-style-type: none;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 10px;
   margin-left: 300px;
+  font-size: 95%;
   text-decoration: none;
 }
 
@@ -273,6 +274,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 80px;
+  font-size: 95%;
 }
 
 .homePage-headings {
