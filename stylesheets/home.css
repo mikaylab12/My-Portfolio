@@ -444,6 +444,11 @@ body {
     align-items: center;
     margin-top: 5px;
   }
+  
+   .sideNavbar-initials {
+        font-size: 54px;
+        margin-top: 22px;
+    }
 
   .sideNavbar-initials {
     font-size: 54px;
@@ -464,7 +469,11 @@ body {
   }
 
   .top-navbar-links {
+<<<<<<< HEAD
     /* display: flex; */
+=======
+/*     display: flex;
+>>>>>>> f57c7b06d4115e9a75e3641a7b2e6204462419e3
     flex-direction: row;
     list-style-type: none;
     justify-content: flex-start;
@@ -472,7 +481,12 @@ body {
     text-decoration: none;
     align-self: center;
     margin-top: -2%;
+<<<<<<< HEAD
     /* margin-right: 2%; */
+=======
+    margin-right: 2%; */
+    display:none;
+>>>>>>> f57c7b06d4115e9a75e3641a7b2e6204462419e3
   }
 
   .top-navbar-links a {
@@ -535,11 +549,19 @@ body {
     justify-content: center;
     margin-top: 80px;
   }
+<<<<<<< HEAD
 
   .homePage-links {
     margin-bottom: 25px;
   }
 
+=======
+  
+.homePage-links {
+        margin-bottom: 25px;
+    }
+  
+>>>>>>> f57c7b06d4115e9a75e3641a7b2e6204462419e3
   .homePage-headings {
     display: flex;
     flex-direction: column;
